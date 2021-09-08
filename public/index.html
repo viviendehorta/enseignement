@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://use.typekit.net/zzx0bqn.css">
+  <title>Shhh : mes adresses secrètes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body id="accueil">
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Restaurants</a></li>
+      <li><a href="#">Cafés/Bars</a></li>
+      <li><a href="#">Mode</a></li>
+      <li><a href="#">Hôtels</a></li>
+      <li><a href="#">Tatoueurs/Piercing</a></li>
+      <li><a href="./html/ajout_adresse.html">Ajouter une adresse</a></li>
+      <li>
+        <form>
+          <input type="search" name="recherche" placeholder="Rechercher des adresses" size="22">
+          <button>Rechercher</button>
+      </form>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+  <header>
+    <h1 id='titre' class="center">Shhh : mes adresses secrètes</h1>
+    <img class="shhh" src="./image/image chut.jpg" height="180" width="300">
+  </header>
+
+  
+  <section>
+    <p class="welc">Shhh vous propose les adresses les plus confidentielles de Paris et sa région, quelques soit le
+      domaine :
+      restauration, arts ou mode... <br />Nous avons l'adresse qui vous faut !</p>
+  </section>
+
+
+  <section>
+    <h2>Les adresses du jour :</h2>
+
+    <button onclick="ajouterAdresse()">Ajouter adresse</button>
+
+    <div id="ajou">
+      <ul class="colonne">
+
+        <li>
+          <h3>Adresse tattoo</h3>
+
+          <h4>Black Dragons</h4>
+
+          <p>
+            1 chemin du parc<br />
+            75001 Paris</p>
+          <p>
+            <a href="./html/details_adresse.html?enseigne=blackdragons&Catégorie=tatoueurs_piercing&Adresse=1_rue_bla&Code_postal=&Ville=&Note=&Commentaire= ">
+              Détails
+            </a>
+
+            <a href="./html/confirmation_suppression.html">
+              Supprimer l'adresse
+            </a>
+          </p>
+        </li>
+        <li>
+          <h3>Adresse resto</h3>
+
+          <h4>Konichiwa</h4>
+
+          <p>
+            22 rue des fleurs <br />
+            75002 Paris</p>
+
+          <a href="./html/details_adresse2.html">
+            Détails
+
+          </a>
+          <a href="./html/confirmation_suppression.html">
+
+            Supprimer l'adresse
+
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <div>
+  <img class="patchwork" src="./image/img.jpg" height="283" width="390">
+</div>
+
+
+  <form>
+      <input type="search" placeholder="Votre adresse mail..." size="40">
+      <button>S'abonner</button>
+  </form>
+
+
+  <footer>
+    <a href="./html/contact.html">
+      Contact
+
+      <a href="./html/mentions_legales.html">
+        Mentions légales</a>
+  </footer>
+
+
+  <script>
+
+    function ajouterAdresse() {
+      let libelle = "Adresse mode";
+
+      let element_li = document.createElement("li");
+      let element_h3 = document.createElement("h3");
+      element_h3.innerText = libelle;
+      element_li.appendChild(element_h3);
+
+      let element_ul = document.getElementById('ajou')
+      element_ul.appendChild(element_li);
+
+      let name = 'ersatz';
+      let element_h4 = document.createElement('h4');
+      element_h4.innerText = name;
+      element_li.appendChild(element_h4);
+
+      let address = '15 rue des Petits Champs<br/>75010 Paris';
+      let element_p = document.createElement('p');
+      element_p.innerHTML = address;
+      element_li.appendChild(element_p);
+
+      let libDetail = 'Détails';
+      let elementADetail = document.createElement('a');
+      elementADetail.innerText = libDetail;
+      element_li.appendChild(elementADetail);
+
+      elementADetail.setAttribute("href", "./detail/detailsadresses2.html");   // Définit l'attribut href
+
+      let libSupprimer = 'Supprimer l adresse';
+      elementASupprimer = document.createElement('a');
+      elementASupprimer.innerText = libSupprimer;
+      element_li.appendChild(elementASupprimer);
+
+    }
+  </script>
+
+</body>
+
+</html>

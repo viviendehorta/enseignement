@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style.css" />
+    <title>Ajouter une adresse</title>
+    <link rel="stylesheet" href="https://use.typekit.net/zzx0bqn.css">
+</head>
+
+<body id="ajout_adresse">
+
+    <header>
+        <h1>Ajouter une adresse Shhh</h1>
+        <section class="bande"></section>
+
+
+    </header>
+
+    <div class="container">
+        <section class="form_section">
+            <form method="GET" action="../index.html">
+
+                <div class="ligne">
+                    <label>Libellé</label><input class="champ" type="text" placeholder="Nom de l'enseigne"
+                        maxlength="30" name="libelle" autofocus />
+                </div>
+                <div class="ligne">
+                    <label>Catégorie</label>
+                    <select name="Catégorie">
+                        <option value="choisir_catégorie">Choisir une catégorie</option>
+                        <option value="restaurants">Restaurants</option>
+                        <option value="cafes_bars">Cafés/Bars</option>
+                        <option value="mode">Mode</option>
+                        <option value="hotels">Hôtels</option>
+                        <option value="tatoueurs_piercing">Tatoueurs/Piercing</option>
+                    </select>
+                </div>
+                <div class="ligne">
+                    <label>Adresse</label>
+                    <input class="champ" type="text" placeholder="Adresse" maxlength="40"
+                        name="Adresse" size="35" />
+                </div>
+                <div class="ligne">
+                    <label>Code postal</label>
+                    <input class="champcp" type="text" placeholder="Code postal" maxlength="5"
+                        size="7" name="Code_postal" />
+                </div>
+                <div class="ligne">
+                    <label>Ville</label>
+                    <input class="champ" type="text" placeholder="Ville" maxlength="20"
+                        name="Ville" />
+                </div>
+                <div class="ligne">
+                    <label>Note</label>
+                    <input class="champcp" type="number" placeholder="Note" min="0" max="10"
+                        name="Note" />
+                </div>
+                <div class="ligne_haute">
+                    <label>Commentaire</label>
+                    <textarea placeholder="Commentaire, 250 caractères max" maxlength="250"
+                        name="Commentaire"></textarea>
+                </div>
+                <input type="submit" value="envoyer" />
+            </form>
+
+        </section>
+
+        <section class="image_section">
+            <img class="shop" src="../image/photoshopping.jpg" alt="#">
+        </section>
+    </div>
+
+</body>
+
+</html>

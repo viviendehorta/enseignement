@@ -1,0 +1,204 @@
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+/* Page Accueil */
+body#accueil {
+    margin: 20px;
+    background: radial-gradient(rgb(224, 162, 173), #8bb1c0, white);
+}
+#accueil .center {
+    text-align: center;
+    font-size: xx-large;
+    font-family: blenny;
+    text-decoration: underline double;
+    text-decoration-color: white;
+    
+}
+#accueil nav ul  {
+    font-family: blenny;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+#accueil nav ul li {
+    display: inline-block;
+    margin-left: 40px; 
+}
+#accueil nav ul a {
+    color: black;
+    border-color:rgb(218, 232, 236);
+}
+#accueil .espace_recherche {
+    display: inline-block;
+}
+#accueil .welc {
+    text-align: center;
+    border: dotted;
+    font-size: x-large;
+    font-family: serif;
+    background-color: rgb(194, 210, 226);
+      
+}
+#accueil img.shhh {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    
+}
+
+#accueil img.patchwork {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30px;
+    right: 30px;  
+}
+#accueil ul a, footer a, button, #ajou  a {
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    background-color: rgb(225, 234, 236);
+    color: rgb(247, 119, 119);
+    padding: 5px;
+    border-color: black;
+    font-family: blenny;
+    border-radius: 10px;
+}
+
+#accueil .lien:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+#accueil h2 {
+    font-size: 1.4em;
+    text-decoration: underline;
+    
+}
+
+#accueil h3 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#accueil h4 {
+    font-size: 1.1em;
+}
+
+#accueil ul {
+    list-style-type: none;
+    
+}
+#accueil .colonne, h2 {
+    background-color: rgb(194, 210, 226);
+    font-family: blenny;
+    padding: 18px;
+    margin: 18px;
+    border-radius: 10px;
+    width: 330px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#accueil input {
+    border-radius: 10px;
+    padding: 10px;
+}
+#accueil #ajou {
+    list-style-type: none;
+    background-color: rgb(194, 210, 226);
+    padding: 18px;
+    margin: 18px;
+    border-radius: 10px;
+    width: 366px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    font-family: blenny;
+}
+#accueil footer {
+    text-align: center;
+    font-weight: bold;
+    line-height: 89px;    
+}
+
+
+/* Page d'ajout adresse */
+body#ajout_adresse {
+    background-color: rgb(208, 208, 218);
+    
+}
+
+#ajout_adresse h1 {
+    font-family: mythos-std ;
+    margin-right: 500px;
+    text-align: end;
+}
+
+#ajout_adresse textarea {
+    resize: none;
+}
+
+#ajout_adresse .bande {
+    text-align: center;
+    display: list-item;
+    font-size: x-large;
+    background-image:
+    radial-gradient(circle at 100% 150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, silver 24%, white 24%, white 28%, silver 28%, silver 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, silver 10%, silver 23%, white 23%, white 30%, silver 30%, silver 43%, white 43%, white 50%, silver 50%, silver 63%, white 63%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, silver 5%, silver 15%, white 15%, white 20%, silver 20%, silver 29%, white 29%, white 34%, silver 34%, silver 44%, white 44%, white 49%, transparent 49%, transparent);
+    background-size: 100px 50px;
+    line-height: 3em;
+}
+
+#ajout_adresse .container {
+    display: flex;
+    margin-top: 30px
+}
+#ajout_adresse .form_section {
+    flex: 1.2;
+    padding-left: 20px;
+}
+#ajout_adresse .form_section form {
+    display: flex;
+    flex-direction: column;
+}
+#ajout_adresse .ligne {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#ajout_adresse .ligne label, #ajout_adresse .ligne_haute label {
+    flex: 1;
+}
+#ajout_adresse .ligne input, #ajout_adresse .ligne select, #ajout_adresse .ligne_haute textarea {
+    flex: 3;
+    padding-left: 5px;
+}
+#ajout_adresse .ligne_haute {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#ajout_adresse input[type="submit"] {
+    align-self: flex-end;
+    width: 100px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+#ajout_adresse .image_section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+#ajout_adresse .image_section img.shop {
+    height: 500px;
+    width: 500px;
+}
+
